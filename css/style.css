@@ -279,7 +279,7 @@ footer h4{
 
 @media (max-width: 480px) {
   body {
-    background: linear-gradient(to left, rgba(35, 22, 17, 0), rgba(0, 0, 0, 1)), url("../img/background-mobile2.png");
+    background: linear-gradient(to left, rgba(35, 22, 17, 0), rgba(0, 0, 0, 1)), url("../img/background-mobile.webp");
     background-size:cover;
     background-attachment:fixed;
     scroll-behavior: smooth;
