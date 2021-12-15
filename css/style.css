@@ -328,11 +328,10 @@ footer h4{
     text-align: center;
     align-items: center;
     margin: 0 auto;
-    height: 100vh;
   }
 
   .container {
-    padding: 30px;
+    padding: 20px;
   }
 
   header {
