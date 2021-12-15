@@ -1,9 +1,10 @@
 body {
   font-family: "Roboto", sans-serif; 
-  background: linear-gradient(to left, rgba(35, 22, 17, 0), rgba(0, 0, 0, 1)), url("../img/background-teste2.png");
+  background: linear-gradient(to left, rgba(35, 22, 17, 0), rgba(0, 0, 0, 1)), url("../img/background.png");
   background-size: cover;
   background-attachment: fixed;
   scroll-behavior: smooth;
+  height: 100vh;
 }
 
 header, h1, h2, h3, h4, button {
@@ -16,10 +17,8 @@ header {
   position: fixed;
   width: 100vw;
   background-color: black;
-  /* opacity: 0.7; */
   font-weight: bold;
   z-index: 10;
- 
 }
 
 .header-logo {
@@ -48,12 +47,18 @@ header {
   margin-top: 35px; 
   justify-content: center;
   float: right;
+  text-align: center;
 }
 
 .navbar ul li a {
   color: #ffcb00;
   margin-left: 20px;
   font-size: 1.25em;
+}
+
+.navbar ul li a:hover {
+  color: white;
+  border-bottom: solid 2px white;
 }
 
 .hero {
@@ -92,9 +97,11 @@ p {
   text-align: center;
   background-color: black;
   opacity: 0.98;
+  padding-bottom: 50px;
 }
 
 .about p {
+  padding: 30px 0;  
   color: white;
   margin-bottom: 40px;
 }
@@ -138,7 +145,7 @@ h4 {
   color: white;
   text-align: center;
   background-color: black;
-  opacity: 0.98;
+  opacity: 0.9;
   text-align: center;
 }
 
@@ -146,6 +153,22 @@ h4 {
   color: #ffcb00;
 }
 
+.feedback-text {
+  font-style: italic;
+  font-size: 1.125em;
+  font-weight: 300;
+}
+
+.feedback span {
+  display: block;
+  padding-top: 15px;
+  margin-bottom: 40px;
+  color: #ffcb00;
+}
+
+.feedback span:hover {
+  text-decoration: underline;
+}
 
 .img-itens {
   margin-right: 32px;
@@ -190,10 +213,21 @@ footer h4{
   margin-right: 10px;
 }
 
+.social-media img:hover {
+  max-width: 62px;
+  margin-right: 8px;
+}
+
+@media (max-width: 980px) {
+  .metodology img {
+    max-width: 250px;
+  }
+}
+
 /* tablet */
 @media (max-width: 739px) {
   body {
-    background: linear-gradient(to left, rgba(35, 22, 17, 0), rgba(0, 0, 0, 1)), url("../img/background-teste2.png");
+    background: linear-gradient(to left, rgba(35, 22, 17, 0), rgba(0, 0, 0, 1)), url("../img/background-mobile-tablet.png");
     background-size:cover;
     background-attachment:fixed;
     scroll-behavior: smooth;
@@ -212,8 +246,6 @@ footer h4{
   }
   
   .navbar ul li a {
-    
-    color: #ffcb00;
     margin: 0;
     font-size: 1em;
   }
@@ -228,6 +260,10 @@ footer h4{
     font-size: 2.5em;
     margin-top: 40px;
     margin-bottom: 40px;
+  }
+
+  .about {
+    padding-bottom: 0px;
   }
 
   .itens-img {
@@ -273,13 +309,20 @@ footer h4{
     max-width: 60px;
     margin-right: 10px;
   }
-  
 
+  .social-media img:hover {
+    max-width: 60px;
+    margin-right: 10px;
+  }
+}
+
+.modal {
+  margin-top: 120px !important;
 }
 
 @media (max-width: 480px) {
   body {
-    background: linear-gradient(to left, rgba(35, 22, 17, 0), rgba(0, 0, 0, 1)), url("../img/background-mobile.webp");
+    background: linear-gradient(to left, rgba(35, 22, 17, 0), rgba(0, 0, 0, 1)), url("/img/background-mobile.png");
     background-size:cover;
     background-attachment:fixed;
     scroll-behavior: smooth;
@@ -296,7 +339,7 @@ footer h4{
     display: flex;
     margin: 0 auto;
     align-items: center;
-    opacity: .8;
+    opacity: 1;
     height: 155px;
   }
 
@@ -317,19 +360,14 @@ footer h4{
   .navbar ul li {
     margin-bottom: 10px;
   }
-
-  .navbar ul li:hover {
-    border-bottom: 1px solid #ffcb00;
-  }
   
   .navbar ul li a {
-    color: #ffcb00;
     font-size: 1em;
   }
 
 
   h1 {
-    margin-top: 400px;
+    margin-top: 300px;
     color:white;
     font-size: 2em;
   } 
@@ -374,4 +412,8 @@ footer h4{
     max-width: 60px;
     margin-right: 10px;
   }
+}
+
+.owl-item {
+  margin-bottom: -30px;
 }
