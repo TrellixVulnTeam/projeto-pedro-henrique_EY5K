@@ -324,6 +324,7 @@ footer h4{
   body {
     background: linear-gradient(to left, rgba(35, 22, 17, 0), rgba(0, 0, 0, 1)), url("/img/background-mobile.png");
     background-size: cover;
+    background-attachment: fixed;
     text-align: center;
     align-items: center;
     margin: 0 auto;
