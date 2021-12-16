@@ -151,6 +151,10 @@ p {
   transition: all ease-in-out .3s;
 }
 
+button a {
+  color: black;
+}
+
 h4 {
   font-size: 2em;
 }
@@ -236,6 +240,15 @@ footer h4{
   .metodology img {
     max-width: 250px;
   }
+}
+
+.whatsapp {
+  position: fixed;
+  left: 75vw;
+  top: 75vh;
+  z-index: 999;
+  max-width: 90px;
+  display: none;
 }
 
 /* tablet */
@@ -424,8 +437,13 @@ footer h4{
     max-width: 60px;
     margin-right: 10px;
   }
+
+  .whatsapp {
+    display: block;
+  }
 }
 
 .owl-item {
   margin-bottom: -30px;
 }
+
