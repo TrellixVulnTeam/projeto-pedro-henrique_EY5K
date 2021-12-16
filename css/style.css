@@ -403,6 +403,11 @@ footer h4{
     margin-bottom: 40px;
   }
 
+  h4 {
+    font-size: 1.25em;
+    margin-top: -10px;
+  }
+
   p {
     font-size: 1em;
   }
