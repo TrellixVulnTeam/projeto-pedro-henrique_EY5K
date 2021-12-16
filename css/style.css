@@ -240,13 +240,6 @@ footer h4{
 
 /* tablet */
 @media (max-width: 739px) {
-  body {
-    background: linear-gradient(to left, rgba(35, 22, 17, 0), rgba(0, 0, 0, 1)), url("../img/background-mobile-tablet.png");
-    background-size:cover;
-    background-attachment:fixed;
-    scroll-behavior: smooth;
-  }
-
   header {
     height: 120px;
   }
@@ -274,6 +267,10 @@ footer h4{
     font-size: 2.5em;
     margin-top: 40px;
     margin-bottom: 40px;
+  }
+
+  .about, .metodology, .feedback {
+    opacity: 1;
   }
 
   .about {
@@ -339,6 +336,8 @@ footer h4{
     background: linear-gradient(to left, rgba(35, 22, 17, 0), rgba(0, 0, 0, 1)), url("../img/background-mobile.jpg");
     background-attachment: scroll;
     background-size: cover;
+    background-position-y: 120px;
+    background-position-x: center;
     text-align: center;
     align-items: center;
     margin: 0 auto;
