@@ -1,0 +1,30 @@
+.about {
+    color: #ffcb00;
+    text-align: center;
+    background-color: black;
+    opacity: 0.98;
+    padding-bottom: 50px;
+
+    @include only-mobile {
+        opacity: 1;
+        padding-bottom: 0px;
+    }
+
+}
+
+.about p {
+    line-height: 1.5em;
+    padding: 30px 0;  
+    color: white;
+    margin-bottom: 40px;
+}
+
+.about img {
+    @include only-mobile {
+        max-width: 300px
+    }
+
+    @include tablet_and_desk {
+        max-width: 100%;
+    }
+}

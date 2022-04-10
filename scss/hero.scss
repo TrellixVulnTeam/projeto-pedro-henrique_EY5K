@@ -1,0 +1,12 @@
+.hero {
+    height: 100vh;
+    background: transparent;
+    background-size: cover;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-content: center;
+}

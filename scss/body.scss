@@ -1,0 +1,30 @@
+body {
+    font-family: "Roboto", sans-serif; 
+    background: linear-gradient(to left, rgba(35, 22, 17, 0), rgba(0, 0, 0, 1)), url("../img/background.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+    height: 100vh;
+    
+    @include only-tablet {
+        background: linear-gradient(to left, rgba(35, 22, 17, 0), rgba(0, 0, 0, 1)), url("../img/background-tablet.webp");
+        background-size: cover;
+        background-attachment: fixed;  
+        height: 100vh;
+    }
+
+    @include only-mobile {
+        background: linear-gradient(to left, rgba(35, 22, 17, 0), rgba(0, 0, 0, 1)), url("../img/background-mobile.webp");
+        background-attachment: scroll;
+        background-size: cover;
+        background-position-y: 120px;
+        background-position-x: center;
+        text-align: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+
+}
+
+

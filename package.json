@@ -1,0 +1,23 @@
+{
+  "name": "projeto-pedro-henrique",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -w scss/theme.scss css/theme.css compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pldnz/projeto-pedro-henrique.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pldnz/projeto-pedro-henrique/issues"
+  },
+  "homepage": "https://github.com/pldnz/projeto-pedro-henrique#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

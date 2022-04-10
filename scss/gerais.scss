@@ -1,0 +1,72 @@
+body {
+  font-family: $fontbody;
+}
+
+header, h1, h2, h3, h4, button {
+  font-family:  $fonttitles;
+}
+
+section {
+  @include only-mobile {
+    padding: 0 20px;
+  }
+}
+
+h1 {
+  margin-top: 100px;
+  color:white;
+  font-size: 4em;
+
+  @include only_tablet {
+    margin-top: 350px;
+    color:white;
+    font-size: 3em;
+  }
+
+  @include only-mobile {
+    margin-top: 440px;
+    color:white;
+    font-size: 2em;
+  }
+} 
+
+h2 {
+  font-size: 3em;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  @include only-tablet {
+    font-size: 2.5em;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  @include only-mobile {
+    font-size: 1.5em;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: #ffcb00;
+  margin:30px auto;
+}
+
+h4 {
+  font-size: 2em;
+
+  @include only-mobile {
+    font-size: 1.25em;
+    margin-top: -10px;
+  }
+}
+
+p {
+  text-align: left;
+  font-size: 1.25em;
+}

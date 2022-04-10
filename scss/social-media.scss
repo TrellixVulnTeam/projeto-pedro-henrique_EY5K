@@ -1,0 +1,41 @@
+.social-media {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    @include only_tablet {
+        margin: 0 auto;
+    }
+}
+
+.social-media img {
+    max-width: 60px;
+    margin-right: 10px;
+    @include only_tablet {
+        max-width: 60px;
+        margin-right: 10px;
+    }
+}
+
+.social-media img:hover {
+    @include only_desk {
+        max-width: 62px;
+        margin-right: 8px;
+    }
+}
+
+.whatsapp {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+    @include only_desk {
+        display: none;
+    }
+}
+
+.whatsapp img {
+    width: 90px;
+}
+  

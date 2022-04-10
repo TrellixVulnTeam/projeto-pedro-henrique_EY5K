@@ -1,0 +1,31 @@
+.navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    text-align: center;
+
+    @include only-mobile {
+        padding: 10px;
+        justify-content: center;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        float: none;
+    }
+}
+
+.navbar ul li a {
+color: $amarelo;
+margin-left: 20px;
+font-size: 1.25em;
+
+    @include only-mobile {
+        margin: 0;
+        font-size: 1em;
+    }
+}
+ 
+.navbar ul li a:hover {
+color: white;
+border-bottom: solid 2px white;
+}
